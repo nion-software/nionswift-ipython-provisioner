@@ -30,7 +30,7 @@ class SwiftProvisioner(provisioner_base.KernelProvisionerBase): # type: ignore
         environment if the current python is running in such. Like this we don't disrupt any other python
         installtions.
         """
-        kernel_source_dir =  resources.files("nionswift_kernel_provisioner.kernel_provisioner").joinpath("resources/nion_swift_kernel")
+        kernel_source_dir =  resources.files("nionswift_kernel_provisioner").joinpath("resources/nion_swift_kernel")
         kernelspec.install_kernel_spec(str(kernel_source_dir), kernel_name=SWIFT_KERNEL_NAME, prefix=sys.prefix)
 
     @property
