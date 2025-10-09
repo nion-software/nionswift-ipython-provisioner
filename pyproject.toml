@@ -33,3 +33,8 @@ include = ["nionswift_kernel_provisioner"]
 
 [project.entry-points."jupyter_client.kernel_provisioners"]
 "nion-swift-provisioner" = "nionswift_kernel_provisioner.kernel_provisioner:SwiftProvisioner"
+
+[tool.pytest.ini_options]
+testpaths = [
+    "nionswift_kernel_provisioner"
+]
